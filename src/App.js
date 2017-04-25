@@ -116,9 +116,11 @@ const BookSearchFormInput = (props) => {
   );
 };
 
-const BookSearchFormButton = props => (
-  <button onClick={props.handleClick}>検索</button>
-);
+const BookSearchFormButton = (props) => {
+  return (
+    <button onClick={props.handleClick}>検索</button>
+  );
+};
 
 const BookSearchResult = (props) => {
   const displayRadioButton = () => {
